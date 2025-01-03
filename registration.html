@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <link rel="stylesheet" href="css/registrationStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading-container">
+        <h2 class="typing-animation">Barakah Food Bank Registration Form</h2>
+    </div>
+    <div class="form-container">
+        <form role="form" action="saveRegistration.php" method="post">
+            <div class="input-box">
+                <h3>Account Details</h3>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="clientUsername" name="clientUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="clientPassword" name="clientPassword" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <h3>User Details</h3>
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="clientFullName" name="clientFullName" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="clientEmailAddress" placeholder="eg: johndoe@gmail.com" name="clientEmailAddress" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="clientPhoneNumber" placeholder="eg: 0123456789" name="clientPhoneNumber" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Full Address</label>
+                    <input type="text" id="clientFullAddress" name="clientFullAddress" required>
+                </div>
+                <div class="input-group">
+                    <label for="city">City</label>
+                    <input type="text" id="clientCity" name="clientCity" required>
+                </div>
+                <div class="input-group">
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="clientPoscode" name="clientPoscode" required>
+                </div>
+                <div class="input-group">
+                    <label for="state">State</label>
+                    <input type="text" id="clientState" name="clientState" required>
+                </div>
+            </div>
+            <button type="submit" name="submit">Register</button>
+        </form>
+        <br><br>
+        <button type="submit" name="submit" onclick="window.location.href='loginform.html'">Return</button>
+    </div>
+</body>
+</html>

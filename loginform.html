@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading-container">
+        <h2 class="typing-animation">Barakah Food Bank Login Form</h2>
+    </div>
+    <div class="login-container">
+        <form role="form" action="loginHandle.php" method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="clientUsername" placeholder="Your Username" name="clientUsername" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="clientPassword" placeholder="Your Password" name="clientPassword" required>
+            </div>
+            <button type="submit">Login</button>
+            <button type="button" onclick="window.location.href='registration.html'">Register</button>
+            <p class="forgot-link"><a href="forgotpassuname.html">Forgot password</a></p>
+        </form>
+    </div>
+</body>
+</html>
