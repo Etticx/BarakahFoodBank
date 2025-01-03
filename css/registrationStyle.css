@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    background-color: #b3e5fc; /* Baby blue background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.heading-container {
+    margin-bottom: 20px;
+}
+
+h2.typing-animation {
+    color: #0277bd; /* Darker shade of blue */
+    font-size: 24px;
+    overflow: hidden;
+    border-right: .15em solid #0277bd; /* Cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #0277bd; }
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.input-box {
+    border: 1px solid #0277bd; /* Border for input boxes */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.input-box h3 {
+    color: #0277bd; /* Darker shade of blue */
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0277bd; /* Darker shade of blue */
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #0277bd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #01579b; /* Even darker blue on focus */
+}
+
+button {
+    background-color: #0277bd; /* Darker shade of blue */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #01579b; /* Even darker blue on hover */
+}
